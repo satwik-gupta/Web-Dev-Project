@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   <link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Satwik Gupta</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">My Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#works">My Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container mt-3">
+    <section id="hero" class="d-flex  justify-content-sm-center justify-content-sm-evenly align-items-sm-center flex-column-reverse gap-3 flex-md-row">
+     <!-- Hero -->
+     <div class="d-flex justify-content-sm-center align-items-sm-center flex-column justify-md-start align-items-md-start">
+       <h5>Hi!</h5>
+       <h1>I am Satwik Gupta</h1>
+       <p>A Fullstack Web Developer</p>
+       <button class="btn btn-primary btn-sm">My Resume</button>
+     </div>
+     <div class="d-md-none w-50 w-50">
+       <img
+       src="data:image/png;base64,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" alt="Satwik Gupta" class="w-100 h-100 rounded circle shadow">
+     </div>
+    </section>
+
+    <section id="skills" class="mt-5 p-4 "> 
+    <!-- My Skills -->
+    <h1 class="text-primary">My Skill Set</h1>
+          <div class="mt-4d-md-none d-flex justify-content-sm-evenly">
+            <i class="fab fa-html5 fa-3x" style="color:#f4470b"></i>
+            <i class="fab fa-css3-alt fa-3x text-primary"></i>
+            <i class="fab fa-bootstrap fa-3x" style="color:#730fef"></i>
+          </div>
+          <div class="mt-4d-md-none d-flex justify-content-sm-evenly">
+            <i class="fab fa-html5 fa-7x" style="color:#f4470b"></i>
+            <i class="fab fa-css3-alt fa-7x text-primary"></i>
+            <i class="fab fa-bootstrap fa-7x" style="color:#730fef"></i>
+          </div>
+
+    </section>
+
+   <section id="works" class="mt-4 p-4">
+    <!-- My works -->
+    <h1 class="text-primary">My Works</h1>
+    <div class="row">
+      <div class="col-sm col-md-4">
+    <div class="card mb-2">
+    <img
+    src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Portfolio Website</h5>
+      <p class="card-text">Built an amazing responsive website using bootstrap</p>
+      <a href="#" class="btn btn-dark">View Source<i class="fab fa-github"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+   <div class="row">
+      <div class="col-sm col-md-4">
+    <div class="card mb-2">
+    <img
+    src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Portfolio Website</h5>
+      <p class="card-text">Built an amazing responsive website using bootstrap</p>
+      <a href="#" class="btn btn-dark">View Source<i class="fab fa-github"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+     <div class="row">
+      <div class="col-sm col-md-4">
+    <div class="card mb-2">
+    <img
+    src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Portfolio Website</h5>
+      <p class="card-text">Built an amazing responsive website using bootstrap</p>
+      <a href="#" class="btn btn-dark">View Source<i class="fab fa-github"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>       
+    </section>
+
+    <section id="contact" class="mt-4 py-4>
+    <!-- Contact Me -->
+    <h1 class="text-primary text center">Contact Form</h1>
+     <div class="row">
+      <div class="col-sm col-md-8">
+
+     <form>
+     <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Enter your amazing message!" rows="3"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+      </div>
+     </div>
+
+     <div class="col-sm col-md-4">
+     <div class="mt-3">
+       <h4><i class="fas fa-at text-primary"></i>satwikgupta91@gmail.com</h4>
+       <button type="button" class="btn btn-link">
+         <a href="https://www.linkedin.com/in/satwik-g-27006520a/"><i class="fab fa-linkedin"></i></a>
+       </button>
+     </div>
+     </div>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
